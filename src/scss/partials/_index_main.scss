@@ -1,32 +1,34 @@
 #content
 {
-
+  /* FILLER */
+  box-sizing: border-box;
 }
 
 #content section
 {
   padding: 1.5em;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 5%, rgba(255,255,255,0) 95%), var(--light-color);
+  background: $transparent-linear-gradient, $light-shade;
 }
 
 #projects
 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%), var(--main-color) !important; 
-  color: var(--light-color);
+  background: $transparent-linear-gradient, $feature-color !important; 
+  color: $light-shade;
 
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  text-shadow: $drop-shadow;
 }
 
 #contact
 {
-
+  /* FILLER */
+  box-sizing: border-box;
 }
 
 #contact input[type=text],  #contact textarea
 {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid var(--light-color);
+  border: 1px solid $light-shade;
   border-radius: 4px;
 
   margin-top: 0.4rem;
@@ -36,8 +38,8 @@
 
 #contact input[type=submit]
 {
-  background-color: var(--main-color);
-  color: var(--light-color);
+  background-color: $feature-color;
+  color: $light-shade;
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 4px;
@@ -46,5 +48,5 @@
 
 #contact input[type=submit]:hover
 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%), var(--main-color) !important; 
+  background: $transparent-linear-gradient, $feature-color !important; 
 }

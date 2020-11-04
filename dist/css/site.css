@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
-:root {
-  --main-color: #65486A;
-  --light-color: #ededed;
-  --dark-color: #323232;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -17,26 +11,24 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0;
-  background-color: var(--light-color);
+  background-color: #ededed;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   font-size: 1.618rem;
-  /* Golden Ratio */
   margin: 0 0 1rem 0;
 }
 
 h1 {
-  font-size: 2.618rem;
-  /* Double Golden Ratio */
+  font-size: 3.236rem;
 }
 
 #nav {
   display: flex;
   align-items: center;
-  min-height: 2.8rem;
-  background: var(--main-color);
+  min-height: 3.236rem;
+  background: #65486A;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -44,8 +36,8 @@ h1 {
 
 #nav svg {
   width: 2rem;
-  height: 2rem;
-  fill: var(--light-color);
+  height: auto;
+  fill: #ededed;
   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
@@ -53,7 +45,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--light-color);
+  color: #ededed;
   text-decoration: none;
   min-width: 5rem;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
@@ -69,14 +61,13 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), var(--main-color);
-  color: var(--light-color);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #65486A;
+  color: #ededed;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 #header h1 {
-  font-size: 4.236rem;
-  /* Quadruple Golden Ratio */
+  font-size: 4.854rem;
   margin: 0;
 }
 
@@ -87,24 +78,34 @@ h1 {
 }
 
 #header svg path {
-  fill: var(--light-color);
+  fill: #ededed;
+}
+
+#content {
+  /* FILLER */
+  box-sizing: border-box;
 }
 
 #content section {
   padding: 1.5em;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 5%, rgba(255, 255, 255, 0) 95%), var(--light-color);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #ededed;
 }
 
 #projects {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), var(--main-color) !important;
-  color: var(--light-color);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #65486A !important;
+  color: #ededed;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#contact {
+  /* FILLER */
+  box-sizing: border-box;
 }
 
 #contact input[type=text], #contact textarea {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid var(--light-color);
+  border: 1px solid #ededed;
   border-radius: 4px;
   margin-top: 0.4rem;
   margin-bottom: 1rem;
@@ -112,8 +113,8 @@ h1 {
 }
 
 #contact input[type=submit] {
-  background-color: var(--main-color);
-  color: var(--light-color);
+  background-color: #65486A;
+  color: #ededed;
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 4px;
@@ -121,21 +122,22 @@ h1 {
 }
 
 #contact input[type=submit]:hover {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), var(--main-color) !important;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #65486A !important;
 }
 
 #footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), var(--main-color);
-  color: var(--light-color);
+  min-height: 3.236rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #65486A;
+  color: #ededed;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 #footer svg {
   width: 2rem;
   height: 2rem;
-  fill: var(--light-color);
+  fill: #ededed;
   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
 }

@@ -7,15 +7,15 @@
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%), var(--main-color);
-  color: var(--light-color);
+  background: $transparent-linear-gradient, $feature-color;
+  color: $light-shade;
 
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  text-shadow: $drop-shadow;
 }
 
 #header h1
 {
-  font-size: 4.236rem; /* Quadruple Golden Ratio */
+  font-size: $golden-ratio * 3;
 
   margin: 0;
 }
@@ -24,10 +24,10 @@
 {
   width: 8rem;
   height: 8rem;
-  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow($drop-shadow);
 }
 
 #header svg path
 {
-  fill: var(--light-color)
+  fill: $light-shade
 }

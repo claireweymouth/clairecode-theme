@@ -2,8 +2,8 @@
 {
   display: flex;
   align-items: center;
-  min-height: 2.8rem;
-  background: var(--main-color);
+  min-height: $golden-ratio * 2;
+  background: $feature-color;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -12,9 +12,9 @@
 #nav svg
 {
   width: 2rem;
-  height: 2rem;
-  fill: var(--light-color);
-  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
+  height: auto;
+  fill: $light-shade;
+  filter: drop-shadow($drop-shadow);
 }
  
 #nav a
@@ -22,11 +22,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--light-color);
+  color: $light-shade;
   
   text-decoration: none;
   min-width: 5rem;
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  text-shadow: $drop-shadow;
 
   
 }
