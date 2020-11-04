@@ -11,11 +11,3 @@
 
   text-shadow: $drop-shadow;
 }
-
-#footer svg
-{
-  width: 2rem;
-  height: 2rem;
-  fill: $light-shade;
-  filter: drop-shadow($drop-shadow);
-}

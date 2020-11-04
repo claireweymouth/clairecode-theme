@@ -10,6 +10,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  line-height: 1.618rem;
   margin: 0;
   background-color: #ededed;
 }
@@ -17,16 +18,29 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   font-size: 1.618rem;
-  margin: 0 0 1rem 0;
+  margin: 1.618rem 0;
 }
 
 h1 {
+  font-size: 4.854rem;
+}
+
+h2 {
   font-size: 3.236rem;
+}
+
+h3 {
+  font-size: 2.2652rem;
+}
+
+h4 {
+  font-size: 1.9416rem;
 }
 
 #nav {
   display: flex;
   align-items: center;
+  padding: 0 0.809rem;
   min-height: 3.236rem;
   background: #65486A;
   position: sticky;
@@ -51,12 +65,12 @@ h1 {
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-#nav a:hover {
+#nav a :hover {
   text-decoration: underline;
 }
 
 #header {
-  min-height: 90vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,29 +80,16 @@ h1 {
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-#header h1 {
-  font-size: 4.854rem;
-  margin: 0;
-}
-
-#header svg {
-  width: 8rem;
-  height: 8rem;
-  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
-}
-
-#header svg path {
-  fill: #ededed;
-}
-
-#content {
-  /* FILLER */
-  box-sizing: border-box;
-}
-
 #content section {
-  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.618rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #ededed;
+}
+
+#content section div.content {
+  max-width: 60rem;
 }
 
 #projects {
@@ -133,11 +134,4 @@ h1 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #65486A;
   color: #ededed;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
-}
-
-#footer svg {
-  width: 2rem;
-  height: 2rem;
-  fill: #ededed;
-  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
 }

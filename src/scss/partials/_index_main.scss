@@ -1,13 +1,19 @@
 #content
 {
-  /* FILLER */
-  box-sizing: border-box;
-}
+  section
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $golden-ratio;
+    background: $transparent-linear-gradient, $light-shade;
+  
+    div.content
+    {
+      max-width: 60rem;
+    }
 
-#content section
-{
-  padding: 1.5em;
-  background: $transparent-linear-gradient, $light-shade;
+  }
 }
 
 #projects

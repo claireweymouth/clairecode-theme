@@ -1,6 +1,6 @@
 #header
 {
-  min-height: 90vh;
+  min-height: 60vh;
 
   display: flex;
   flex-direction: column;
@@ -11,23 +11,4 @@
   color: $light-shade;
 
   text-shadow: $drop-shadow;
-}
-
-#header h1
-{
-  font-size: $golden-ratio * 3;
-
-  margin: 0;
-}
-
-#header svg
-{
-  width: 8rem;
-  height: 8rem;
-  filter: drop-shadow($drop-shadow);
-}
-
-#header svg path
-{
-  fill: $light-shade
 }
