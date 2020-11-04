@@ -1,0 +1,247 @@
+/*
+  https://type-scale.com/
+  https://jakearchibald.github.io/svgomg/
+  http://colormind.io/bootstrap/
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root
+{
+  --main-color: #65486A;
+  --light-color: #ededed;
+  --dark-color: #323232;
+}
+
+html
+{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+  box-sizing: inherit;
+}
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: var(--light-color);
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-weight: 300;
+  font-size: 1.618rem; /* Golden Ratio */
+  margin: 0 0 1rem 0;
+}
+
+h1
+{
+  font-size: 2.618rem; /* Double Golden Ratio */
+}
+
+#nav
+{
+  display: flex;
+  align-items: center;
+  min-height: 2.8rem;
+  background: var(--main-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#nav svg
+{
+  width: 2rem;
+  height: 2rem;
+  fill: var(--light-color);
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
+}
+ 
+#nav a
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-color);
+  
+  text-decoration: none;
+  min-width: 5rem;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+
+  
+}
+
+#nav a:hover
+{
+  text-decoration: underline;
+
+}
+
+
+#header
+{
+  min-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%), var(--main-color);
+  color: var(--light-color);
+
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#header h1
+{
+  font-size: 4.236rem; /* Quadruple Golden Ratio */
+
+  margin: 0;
+}
+
+#header svg
+{
+  width: 8rem;
+  height: 8rem;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
+}
+
+#header svg path
+{
+  fill: var(--light-color)
+}
+
+#content
+{
+
+}
+
+#content section
+{
+  padding: 1.5em;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 5%, rgba(255,255,255,0) 95%), var(--light-color);
+}
+
+#projects
+{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%), var(--main-color) !important; 
+  color: var(--light-color);
+
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#contact
+{
+
+}
+
+#contact input[type=text],  #contact textarea
+{
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--light-color);
+  border-radius: 4px;
+
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  resize: vertical;
+}
+
+#contact input[type=submit]
+{
+  background-color: var(--main-color);
+  color: var(--light-color);
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact input[type=submit]:hover
+{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%), var(--main-color) !important; 
+}
+
+#footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%), var(--main-color);
+  color: var(--light-color);
+
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#footer svg
+{
+  width: 2rem;
+  height: 2rem;
+  fill: var(--light-color);
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
+}
+  
+
+  
+  
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
