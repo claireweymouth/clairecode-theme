@@ -1,0 +1,33 @@
+#header
+{
+  min-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%), var(--main-color);
+  color: var(--light-color);
+
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#header h1
+{
+  font-size: 4.236rem; /* Quadruple Golden Ratio */
+
+  margin: 0;
+}
+
+#header svg
+{
+  width: 8rem;
+  height: 8rem;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
+}
+
+#header svg path
+{
+  fill: var(--light-color)
+}

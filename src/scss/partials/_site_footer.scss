@@ -1,0 +1,19 @@
+#footer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%), var(--main-color);
+  color: var(--light-color);
+
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#footer svg
+{
+  width: 2rem;
+  height: 2rem;
+  fill: var(--light-color);
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
+}
