@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
-$feature-color: #65486A;
-$light-shade: #ededed;
-$dark-shade: #323232;
+$primary-color: #65486A;
+$secondar-ycolor: #3f324a;
+$highlight-color: #dcae16;
+$light-shade: #f8f7f1;
+$dark-shade: #37354a;
+
+$info-color:#36354a;
+$success-color:#549058;
+$warning-color: #d18020;
+$danger-color: #f44336;
 
 $drop-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 $transparent-linear-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%);
@@ -25,6 +32,7 @@ body
   font-size: 16px;
   line-height: $golden-ratio;
   margin: 0;
+  color: $dark-shade;
   background-color: $light-shade;
 }
 

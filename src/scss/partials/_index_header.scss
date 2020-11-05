@@ -7,8 +7,10 @@
   justify-content: center;
   align-items: center;
 
-  background: $transparent-linear-gradient, $feature-color;
+  background: $transparent-linear-gradient, $primary-color;
   color: $light-shade;
 
   text-shadow: $drop-shadow;
+
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }

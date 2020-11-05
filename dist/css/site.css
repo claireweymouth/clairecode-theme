@@ -12,7 +12,8 @@ body {
   font-size: 16px;
   line-height: 1.618rem;
   margin: 0;
-  background-color: #ededed;
+  color: #37354a;
+  background-color: #f8f7f1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,7 +52,7 @@ h4 {
 #nav svg {
   width: 2rem;
   height: auto;
-  fill: #ededed;
+  fill: #f8f7f1;
   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
@@ -59,7 +60,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ededed;
+  color: #f8f7f1;
   text-decoration: none;
   min-width: 5rem;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
@@ -76,25 +77,73 @@ h4 {
   justify-content: center;
   align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #65486A;
-  color: #ededed;
+  color: #f8f7f1;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 #content section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 1.618rem;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #ededed;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #f8f7f1;
 }
 
 #content section div.content {
   max-width: 60rem;
 }
 
+#intro {
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: flex-start !important;
+}
+
+#intro div.avatar {
+  margin-top: -10rem;
+}
+
+#intro div.avatar img {
+  width: 20rem;
+  height: auto;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
+}
+
+#intro div.content {
+  display: flex;
+  margin-top: -8rem;
+  flex-direction: column !important;
+  justify-content: flex-start;
+}
+
+#intro div.content section {
+  position: relative;
+  color: #f8f7f1;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #37354a;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: .4em;
+  padding: 0 0.809rem;
+  margin: 1.618rem;
+}
+
+#intro div.content section :after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 0;
+  height: 0;
+  border: 1.281em solid transparent;
+  border-right-color: #37354a;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -0.641em;
+  margin-left: -1.281em;
+}
+
 #projects {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #65486A !important;
-  color: #ededed;
+  color: #f8f7f1;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -106,7 +155,7 @@ h4 {
 #contact input[type=text], #contact textarea {
   width: 100%;
   padding: 0.8rem;
-  border: 1px solid #ededed;
+  border: 1px solid #f8f7f1;
   border-radius: 4px;
   margin-top: 0.4rem;
   margin-bottom: 1rem;
@@ -115,7 +164,7 @@ h4 {
 
 #contact input[type=submit] {
   background-color: #65486A;
-  color: #ededed;
+  color: #f8f7f1;
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 4px;
@@ -132,6 +181,6 @@ h4 {
   align-items: center;
   min-height: 3.236rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%), #65486A;
-  color: #ededed;
+  color: #f8f7f1;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
 }
