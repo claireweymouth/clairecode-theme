@@ -1,0 +1,47 @@
+#intro {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    div.avatar {
+        margin-top: -10rem;
+        img {
+            width: 20rem;
+            height: auto;
+            filter: drop-shadow($shadow);
+        }
+    }
+
+    div.content {
+        display: flex;
+        margin-top: -8rem;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        section {
+            position: relative;
+            color: $color-light;
+            background: linear-gradient($gradient), $color-dark;
+            box-shadow: $shadow;
+            border-radius: 0.4em;
+            padding: 0 ($phi * 0.5rem);
+            margin: ($phi * 1rem);
+            align-items: flex-start;
+
+            :after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 75%;
+                width: 0;
+                height: 0;
+                border: 1.281em solid transparent;
+                border-right-color: $color-dark;
+                border-left: 0;
+                border-bottom: 0;
+                margin-top: -0.641em;
+                margin-left: -1.281em;
+            }
+        }
+    }
+}

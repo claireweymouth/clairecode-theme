@@ -1,12 +1,15 @@
-#footer {
+#header {
+    min-height: 45vh;
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    min-height: ($phi * 2);
 
     background: linear-gradient($gradient), $color-primary;
     color: $color-light;
 
     text-shadow: $shadow;
+
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }

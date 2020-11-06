@@ -1,36 +1,32 @@
-#nav
-{
+#nav {
     display: flex;
     align-items: center;
-    padding: 0 $golden-ratio * 0.5;
-    min-height: $golden-ratio * 2;
-    background: $primary-color;
+    padding: 0 ($phi * 0.5rem);
+    min-height: ($phi * 2rem);
+    background: $color-primary;
     position: sticky;
     top: 0;
     z-index: 100;
 
-    svg
-    {
+    svg {
         width: 2rem;
         height: auto;
-        fill: $light-shade;
-        filter: drop-shadow($drop-shadow);
+        fill: $color-light;
+        filter: drop-shadow($shadow);
     }
 
-    a
-    {
+    a {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: $light-shade;
+        color: $color-light;
 
         text-decoration: none;
         min-width: 5rem;
-        text-shadow: $drop-shadow;
+        text-shadow: $shadow;
 
-        :hover
-        {
-        text-decoration: underline;
+        :hover {
+            text-decoration: underline;
         }
     }
 }

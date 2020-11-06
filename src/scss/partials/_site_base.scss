@@ -1,64 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 
-$primary-color: #65486A;
-$secondar-ycolor: #3f324a;
-$highlight-color: #dcae16;
-$light-shade: #f8f7f1;
-$dark-shade: #37354a;
+$color-primary: #65486a;
+$color-secondary: #3f324a;
+$color-highlight: #dcae16;
 
-$info-color:#36354a;
-$success-color:#549058;
-$warning-color: #d18020;
-$danger-color: #f44336;
+$color-light: #f8f7f1;
+$color-dark: #37354a;
 
-$drop-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
-$transparent-linear-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255,255,255,0) 95%);
+$color-info: #36354a;
+$color-success: #549058;
+$color-warning: #d18020;
+$color-danger: #f44336;
 
-$golden-ratio: 1.618rem;
+$shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+$gradient: 0deg, rgba(0, 0, 0, 0.2) 5%, rgba(255, 255, 255, 0) 95%;
 
-html
-{
-  box-sizing: border-box;
+$phi: 1.618;
+
+$breakpoint-mobile: max-width(499px);
+$breakpont-tablet: min-width(500px) and max-width(999px);
+$breakpoint-desktop: min-width(1000px);
+
+html {
+    box-sizing: border-box;
 }
 
-*, *:before, *:after
-{
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
-body
-{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: $golden-ratio;
-  margin: 0;
-  color: $dark-shade;
-  background-color: $light-shade;
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: ($phi * 1rem);
+    margin: 0;
+    color: $color-light;
+    background-color: $color-secondary;
 }
 
-h1, h2, h3, h4, h5, h6
-{
-  font-weight: 300;
-  font-size: $golden-ratio;
-  margin: $golden-ratio 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    font-size: ($phi * 1rem);
+    margin: ($phi * 1rem) 0;
 }
 
-h1
-{
-  font-size: $golden-ratio * 3;
+h1 {
+    font-size: ($phi * 3rem);
 }
 
-h2
-{
-  font-size: $golden-ratio * 2;
+h2 {
+    font-size: ($phi * 2rem);
 }
 
-h3
-{
-  font-size: $golden-ratio * 1.4;
+h3 {
+    font-size: ($phi * 1.4rem);
 }
 
-h4
-{
-  font-size: $golden-ratio * 1.2;
+h4 {
+    font-size: ($phi * 1.2rem);
+}
+
+@media ($breakpoint-mobile) {
+}
+@media ($breakpont-tablet) {
+}
+@media ($breakpoint-desktop) {
 }
